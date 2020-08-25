@@ -1,0 +1,98 @@
+
+html {
+  margin: 0;
+}
+body{
+  background: url('bgLego.png') no-repeat;
+  background-size: cover;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+h3{
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.grid{
+  width: 20vw;
+  height: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 2px solid #333;
+  background-color: #333;
+}
+.side{
+  display: flex;
+  flex-direction: column;
+}
+.grid div{
+  height: 2vw;
+  width: 2vw;
+}
+.tetromino{
+  background-color:none;
+  z-index: 10;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+#start-button{
+  justify-content: center;
+  border: 2px solid #333;
+  background-color: #333;
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+#start-button:hover{
+  background: rgb(90, 90, 90);
+  color: #fff;
+}
+.mini-grid {
+  margin-left: 70px;
+  min-width: 80px;
+  width: 4vw;
+  min-height: 80px;
+  height: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 2px solid #333;
+  background-color: #333;
+}
+
+.mini-grid div {
+  min-height: 20px;
+  height: 1vw;
+  min-width: 20px;
+  width: 1vw;
+}
+
+
+/* Media */
+@media screen and (min-width: 1025px) {
+  .container {
+    height: 100%;
+  }
+}
